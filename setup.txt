@@ -1,0 +1,18 @@
+conda create -n env python=3.12.1
+conda init 
+source activate env 
+pip install requirements.txt
+
+(
+    pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+    pip3 install pycocotools
+    pip install opencv-python
+)
+
+
+
+dataset 
+https://lila.science/datasets/caltech-camera-traps
+CCT-20 (eccv)
+https://storage.googleapis.com/public-datasets-lila/caltechcameratraps/eccv_18_all_images_sm.tar.gz
+https://storage.googleapis.com/public-datasets-lila/caltechcameratraps/eccv_18_annotations.tar.gz
